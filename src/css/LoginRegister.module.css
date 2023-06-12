@@ -1,0 +1,71 @@
+@import url(./pallete.css);
+@media only screen and (min-width: 992px) {
+  .formWrapper {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 0.5rem;
+  margin: 0;
+}
+input {
+  padding: 0.7rem 1rem;
+  border: 0;
+  width: 80%;
+  background-color: none;
+  font-size: 1.2rem;
+  border-bottom: 3px solid transparent;
+}
+input:focus {
+  outline: none;
+  /* background-color: #d8d6d6; */
+  border-bottom: 3px solid var(--green);
+}
+
+.formWrapper h1 {
+  color: var(--green);
+}
+.submitbtn {
+  width: 90%;
+  box-sizing: border-box;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--softgreen);
+  border: 0;
+  border-radius: 5px;
+  color: var(--white);
+  transition: all 0.1s ease-out;
+}
+.submitbtn:hover {
+  background-color: rgba(61, 131, 97, 1);
+}
+p {
+  color: var(--softgreen);
+}
+input[type="file"]{
+    display: none;
+}
+.file{
+    width: 100%;
+}
+.file p{
+    text-align: start;
+    padding-left: 2.5rem;
+}
+.file img{
+    height: 1.2rem;
+    vertical-align: middle;
+}
+.formWrapper a{
+    color: var(--green);
+}

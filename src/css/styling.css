@@ -1,0 +1,220 @@
+.container {
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.container .sidebar {
+  flex: 1;
+  /* background-color: var(--heavygreen); */
+  background-color: var(--sidebar);
+  height: 100%;
+}
+.container .sidebar .navbar {
+  display: flex;
+  background-color: #5f7464;
+  align-items: center;
+  height: 5rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  color: var(--white);
+}
+.container .sidebar .navbar .logo {
+  font-weight: bold;
+}
+.container .sidebar .navbar .user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.container .sidebar .navbar .user img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.container .sidebar .navbar .user button {
+  background-color: var(--heavygreen);
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.container .sidebar .search {
+  border-bottom: 1px solid gray;
+}
+.container .sidebar .search .searchForm {
+  padding: 1rem 0;
+}
+.container .sidebar .search .searchForm input {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  color: white;
+}
+.container .sidebar .search .searchForm input::placeholder {
+  color: lightgray;
+}
+.container .chat {
+  flex: 2;
+  height: 100%;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.container .chat .chatInfo {
+  height: 5rem;
+  background-color: var(--softgreen);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+.container .chat .chatInfo span {
+  color: var(--white);
+}
+.container .chat .chatIcons {
+  display: flex;
+  gap: 1rem;
+}
+.container .chat .messages {
+  width: 100%;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  height: calc(100% - 4rem);
+  overflow: scroll;
+  scrollbar-gutter: stable;
+  scrollbar-color: transparent;
+}
+.container .chat .messages::-webkit-scrollbar {
+  width: 8px;
+}
+.container .chat .messages::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.container .chat .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(136, 136, 136, 0.6705882353);
+  border-radius: 10px;
+}
+.container .chat .messages::-webkit-scrollbar-thumb:hover {
+  /* background-color: #555555; */
+  background-color: var(--heavygreen);
+}
+.container .chat .messages .message {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.container .chat .messages .message .messageInfo {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightgreen);
+  gap: 0.3rem;
+}
+.container .chat .messages .message .messageInfo span {
+  font-size: 0.9rem;
+}
+.container .chat .messages .message .messageInfo img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .chat .messages .message .messageContent {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container .chat .messages .message .messageContent p {
+  background-color: var(--white);
+  padding: 0.8rem 0.8rem;
+  text-align: left;
+  margin: 0;
+  color: black;
+  border-radius: 5px 20px 20px 20px;
+}
+.container .chat .messages .message .messageContent img {
+  width: 4rem;
+  height: auto;
+  border-radius: 10px;
+}
+.container .chat .messages .message.owner {
+  flex-direction: row-reverse;
+}
+.container .chat .messages .message.owner .messageContent {
+  align-items: flex-end;
+}
+.container .chat .messages .message.owner .messageContent p {
+  border-radius: 20px 5px 20px 20px;
+  text-align: center;
+  background-color: var(--softgreen);
+  max-width: max-content;
+  color: white;
+}
+.container .chat .input {
+  height: 4rem;
+  background-color: var(--white);
+  padding: 0rem 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.container .chat .input input[type=text] {
+  margin: 0 1rem;
+  padding: 0.4rem 0;
+}
+.container .chat .input input[type=text]:focus {
+  border-bottom: 2px var(--green) solid;
+}
+.container .chat .input input[type=file] {
+  display: none;
+}
+.container .chat .input .send {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-right: 1rem;
+}
+.container .chat .input .send button {
+  width: fit-content;
+  border: 0;
+  background-color: transparent;
+}
+
+.userChat {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+.userChat:hover {
+  background-color: var(--sidebarhover);
+}
+.userChat img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userChat .userChatInfo span {
+  display: block;
+  text-align: left;
+}
+.userChat .userChatInfo p {
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}

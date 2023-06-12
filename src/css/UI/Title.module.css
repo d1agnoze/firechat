@@ -1,0 +1,9 @@
+@import url(../pallete.css);
+.title{
+    color: #FFF76A;
+    font-size: 3rem;
+}
+img{
+    vertical-align: middle;
+    height: 5rem;
+}

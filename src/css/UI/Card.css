@@ -1,0 +1,28 @@
+@import url(../pallete.css);
+
+
+.card{
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.bg-softgreen{
+    background-color: var(--softgreen);
+}
+.bg-heavygreen{
+    background-color: var(--heavygreen);
+}
+.bg-green{
+    background-color: var(--green);
+}
+.bg-lightgreen{
+    background-color: var(--lightgreen);
+}
+.bg-brightgreen{
+    background-color: var(--brightgreen);
+}
+.bg-white{
+    background-color: var(--white);
+}
+
+  
